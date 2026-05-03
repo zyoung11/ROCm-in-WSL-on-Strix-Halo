@@ -38,7 +38,7 @@ sudo apt install -y hsa-runtime-rocr4wsl-amdgpu
 wget https://github.com/ROCm/librocdxg/releases/download/v1.1.2/rocdxg-roct_1.1.2_amd64.deb
 sudo apt install -y ./rocdxg-roct_1.1.2_amd64.deb
 
-rm ./rocdxg-roct_latest_amd64.deb
+rm ./rocdxg-roct_1.1.2_amd64.deb
 
 sudo apt install -y rocm
 
