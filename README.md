@@ -57,7 +57,7 @@ source ~/.bashrc
 uv venv
 source .venv/bin/activate
 uv pip install --index-url https://repo.amd.com/rocm/whl/gfx1151/ torch torchvision torchaudio
-uv run python -c "
+python -c "
 import torch
 print(f'PyTorch: {torch.__version__}')
 print(f'CUDA available: {torch.cuda.is_available()}')
