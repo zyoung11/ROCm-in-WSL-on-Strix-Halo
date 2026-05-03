@@ -35,8 +35,8 @@ sudo apt update
 
 sudo apt install -y hsa-runtime-rocr4wsl-amdgpu
 
-curl -L -H "Accept: application/octet-stream" -o rocdxg-roct_latest_amd64.deb $(curl -s https://api.github.com/repos/ROCm/librocdxg/releases/latest | grep browser_download_url | grep "rocdxg-roct.*amd64.deb" | cut -d'"' -f4)
-sudo apt install -y ./rocdxg-roct_latest_amd64.deb
+wget https://github.com/ROCm/librocdxg/releases/download/v1.1.2/rocdxg-roct_1.1.2_amd64.deb
+sudo apt install -y ./rocdxg-roct_1.1.2_amd64.deb
 
 rm ./rocdxg-roct_latest_amd64.deb
 
